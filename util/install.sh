@@ -184,7 +184,7 @@ function mn_deps {
                  net-tools \
                  ${PYPKG}-pexpect ${PYPKG}-tk
         # Install pip
-        $install ${PYPKG}-pip || $install ${PYPKG}-pip-whl
+        $install ${PYPKG}3-pip || $install ${PYPKG}-pip-whl
         if ! ${PYTHON} -m pip -V; then
             if [ $PYTHON_VERSION == 2 ]; then
                 wget https://bootstrap.pypa.io/2.6/get-pip.py
